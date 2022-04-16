@@ -105,7 +105,7 @@ fn main() {
     println!("regex: {}", regex_str);
     let mut passed_words: Vec<String> = Vec::new();
     // get the words from the wordle folder
-    let words = get_words("../wordle/words.txt");
+    let words = get_words("words.txt");
     'words: for word in words {
         let _word = word.as_str();
         // if red characters are being used and  if the word does not contain the red characters
